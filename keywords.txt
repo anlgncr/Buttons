@@ -1,0 +1,36 @@
+#######################################
+# Syntax Coloring Map For Tween
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+Buttons			KEYWORD1
+Button			KEYWORD1
+pin				KEYWORD1
+longPressedTime	KEYWORD1
+onButtonUp		KEYWORD1
+onButtonDown	KEYWORD1
+onLongPressed	KEYWORD1
+object			KEYWORD1
+onLongPressed	KEYWORD1
+onChanged		KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+getIndex		KEYWORD2
+update			KEYWORD2
+setDebounceTime	KEYWORD2
+add				KEYWORD2
+remove			KEYWORD2
+buttonUp		KEYWORD2
+buttonDown		KEYWORD2
+buttonLongDown	KEYWORD2
+create			KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
