@@ -7,11 +7,7 @@ class Buttons
   public:
   
   /*
-	The button structure has 10 variables. It occupies (1,1,1,1,1,1,4,4,2,2) 18 bytes in the memory.
-	And for every pointer of button it takes 2 bytes
-	The pointer of the pointer of buttons take 2 bytes
-	if we calculate the total amount of these the formula is 18*button_number + 8
-	pin => The pin connected to the button
+  	pin => The pin connected to the button
 	status => The status of the button. It is true if button is pushed.
 	up => This is true if button is up
 	down => This is true if the button is down
@@ -24,7 +20,6 @@ class Buttons
   */
 	struct Button{
 		uint8_t pin;
-		bool status;
 		bool up;
 		bool down;
 		bool pushed;
@@ -38,7 +33,6 @@ class Buttons
 		void (*onButtonDown)(Button*);
 		void (*onChanged)(Button*);
 		void (*onLongPressed)(Button*);
-		void* object;
 	};
   
 	// Constructor
