@@ -180,9 +180,8 @@ void Buttons::update()
 	for(uint8_t i=0; i<buttons_index; i++)
 	{
 		Button* _button = buttons[i];
-		_button->status = digitalRead(_button->pin); 
 			
-		if(_button->status)
+		if(digitalRead(_button->pin))
 		{
 			_button->down_lastTime = millis();
 			if(_button->up && (millis() - _button->up_lastTime) > debounce_time){
